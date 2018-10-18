@@ -35,6 +35,11 @@ const options = {
         "Dallas",
         "San Jose"
       ]
+    },
+    plotOptions: {
+        bar: {
+            horizontal: true
+        }
     }
 };
 
