@@ -40,7 +40,18 @@ const options = {
         bar: {
             horizontal: true
         }
+    },
+    dataLabels: {
+        enabled: false
+    },
+    title: {
+        text: "US Cities Population",
+        align: "center",
+        style: {
+            fontSize: "25px"
+          }    
     }
+
 };
 
 
