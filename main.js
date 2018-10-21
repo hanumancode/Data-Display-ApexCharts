@@ -41,6 +41,9 @@ const options = {
             horizontal: true
         }
     },
+    fill: {
+        colors: ["#ff0000"]
+      },
     dataLabels: {
         enabled: false
     },
