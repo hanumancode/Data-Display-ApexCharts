@@ -38,7 +38,7 @@ const options = {
     },
     plotOptions: {
         bar: {
-            horizontal: true
+            horizontal: false
         }
     },
     fill: {
@@ -63,3 +63,23 @@ const chart = new ApexCharts(document.querySelector('#chart'), options);
 
 // Render Chart
 chart.render();
+
+// Event Method 
+document.querySelector('#horiz').addEventListener('click', () => chart.updateOptions({
+    plotOptions: {
+      bar: {
+        horizontal: true
+      }
+    }
+  })
+);
+
+// Event Method 
+document.querySelector('#vert').addEventListener('click', () => chart.updateOptions({
+    plotOptions: {
+      bar: {
+        horizontal: false
+      }
+    }
+  })
+);
